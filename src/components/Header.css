@@ -127,11 +127,20 @@ header h1 {
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 1.4rem;
   cursor: pointer;
   line-height: 1;
   padding: 0;
+  z-index: 10;
+}
+
+.search-container:focus-within .close-search {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .search-container:focus-within .close-search {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .search-filter-bar {
