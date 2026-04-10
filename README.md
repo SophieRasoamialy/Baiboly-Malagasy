@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# Baiboly Malagasy - Application Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Une application web moderne, rapide et élégante pour lire la Bible en Malgache. Conçue pour offrir une expérience de lecture premium avec des fonctionnalités de recherche avancées et une interface adaptative.
 
-Currently, two official plugins are available:
+## Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Navigation Intuitive** : Parcourez facilement les livres et chapitres de l'Ancien et du Nouveau Testament.
+- **Recherche Avancée** : Filtrez vos recherches par Testament ou par livre spécifique. Surlignage en temps réel des termes recherchés.
+- **Historique de Lecture** : Retrouvez rapidement vos derniers chapitres consultés grâce au panneau latéral d'historique.
+- **Mode Sombre** : Interface optimisée pour la lecture nocturne, respectant les préférences du système.
+- **Copie de Versets** : Copiez facilement un verset avec sa référence biblique pour le partager. Confirmation visuelle immédiate.
+- **Design Premium** : Animations fluides, typographie soignée et mise en page responsive.
 
-## React Compiler
+## Technologies Utilisées (Stack)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework** : [React](https://reactjs.org/) avec [TypeScript](https://www.typescriptlang.org/) pour une robustesse maximale.
+- **Outil de Build** : [Vite](https://vitejs.dev/) pour un développement et un chargement ultra-rapides.
+- **Stylisation** : CSS Vanille avec variables CSS pour un contrôle total du design et du mode sombre.
+- **Données** : Format JSON structuré pour un accès rapide aux textes bibliques.
 
-## Expanding the ESLint configuration
+## Installation et Utilisation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prérequis
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Assurez-vous d'avoir [Node.js](https://nodejs.org/) installé sur votre machine.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Étapes d'installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. **Cloner le projet** (ou télécharger les fichiers).
+2. **Installer les dépendances** :
+   ```bash
+   npm install
+   ```
+3. **Lancer le serveur de développement** :
+   ```bash
+   npm run dev
+   ```
+4. **Accéder à l'application** : Ouvrez votre navigateur sur l'adresse indiquée dans votre terminal (généralement `http://localhost:5173`).
+
+### Construction pour la production
+
+Pour générer les fichiers optimisés pour le déploiement :
+```bash
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Licence
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Projet développé avec soin pour la communauté malgache.

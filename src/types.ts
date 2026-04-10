@@ -26,3 +26,15 @@ export interface BibleData {
   metadata: BibleMetadata;
   books: Book[];
 }
+
+export interface SearchResult {
+  bookName: string;
+  chapterNumber: number;
+  verse: Verse;
+}
+
+export interface HistoryItem {
+  bookName: string;
+  chapterNumber: number;
+  timestamp: number;
+}
