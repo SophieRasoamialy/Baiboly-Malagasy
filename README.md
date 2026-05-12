@@ -10,11 +10,15 @@ Une application web moderne, rapide et élégante pour lire la Bible en Malgache
 
 ### Accueil et sélection des livres
 
-![Capture d'écran de l'accueil de Baiboly Malagasy](docs/screenshots/home.svg)
+![Capture d'écran de l'accueil de Baiboly Malagasy](docs/screenshots/home.png)
+
+![Capture d'écran de l'accueil de Baiboly Malagasy mode sombre](docs/screenshots/home-dark.png)
 
 ### Lecture d'un chapitre
 
-![Capture d'écran du lecteur de chapitre de Baiboly Malagasy](docs/screenshots/reader.svg)
+![Capture d'écran du lecteur de chapitre de Baiboly Malagasy](docs/screenshots/reader.png)
+
+![Capture d'écran du lecteur de chapitre de Baiboly Malagasy mode sombre](docs/screenshots/reader-dark.png)
 
 ## Fonctionnalités
 
