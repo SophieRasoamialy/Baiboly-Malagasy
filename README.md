@@ -2,6 +2,20 @@
 
 Une application web moderne, rapide et élégante pour lire la Bible en Malgache. Conçue pour offrir une expérience de lecture premium avec des fonctionnalités de recherche avancées et une interface adaptative.
 
+## Application en ligne
+
+- **Web app** : [https://baiboly-malagasy-olive.vercel.app/](https://baiboly-malagasy-olive.vercel.app/)
+
+## Aperçu de l'application
+
+### Accueil et sélection des livres
+
+![Capture d'écran de l'accueil de Baiboly Malagasy](docs/screenshots/home.svg)
+
+### Lecture d'un chapitre
+
+![Capture d'écran du lecteur de chapitre de Baiboly Malagasy](docs/screenshots/reader.svg)
+
 ## Fonctionnalités
 
 - **Navigation Intuitive** : Parcourez facilement les livres et chapitres de l'Ancien et du Nouveau Testament.
